@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Function to add tasks to the list and optionally save them to localStorage
     function addTask(taskText, save = true) {
-        taskText = taskText.trim();  // Ensure the taskText is trimmed of spaces
+        taskText = taskInput.value.trim();  // Ensure the taskText is trimmed of spaces
 
         if (taskText === "") {
             alert("Please enter a task.");  // Alert if the task is empty
